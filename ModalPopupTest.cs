@@ -10,7 +10,7 @@ using AventStack.ExtentReports.Reporter;
 namespace TestModalWindow2201
 { 
     
-    public class ModalPopup
+    public class ModalPopupTest
     {
       private IWebDriver driver = null!;
       private WebDriverWait wait = null!;
@@ -46,7 +46,7 @@ namespace TestModalWindow2201
             var windowsHandles = driver.WindowHandles;
             foreach (var window in windowsHandles)
             {
-                driver.SwitchTo().Window(window); // Переключаемся на текущее окно
+                driver.SwitchTo().Window(window); // Switch current Window
                 currentUrl = driver.Url;
                 if (currentUrl == facebookUrl || currentUrl == twitterUrl)
                 {
