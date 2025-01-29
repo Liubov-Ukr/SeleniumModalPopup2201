@@ -8,8 +8,8 @@ using AventStack.ExtentReports;
 using AventStack.ExtentReports.Reporter;
 
 namespace TestModalWindow2201
-{ 
-    
+{
+    //сlass for testing the correct opening and closing of a modal window
     public class ModalPopupTest
     {
       private IWebDriver driver = null!;
@@ -20,7 +20,7 @@ namespace TestModalWindow2201
         [SetUp]
         public void Setup()
         {
-            sparkReporter = new ExtentSparkReporter("TestReport.html");
+            sparkReporter = new ExtentSparkReporter("TestReportModalPopup.html");
             extent = new ExtentReports(); 
             extent.AttachReporter(sparkReporter);
 
